@@ -1,6 +1,14 @@
 # Pairwise Preference Multileave
 This repository contains the code used for the experiments in "Sensitive and Scalable Online Evaluation with Theoretical Guarantees" published at CIKM 2017.
 
+Reproducing Experiments
+--------
+Recreating the results in the paper for a single dataset (for instance NP2003) can be done with the following command:
+```
+python scripts/CIKM2017.py --n_proc 1 --click_models inf nav per --n_impr 10000 --data_folders NP2003 --n_rankers 15 --print_output --log_folder testoutput/logs/ --average_folder testoutput/average --output_folder testoutput/fullruns/ --n_runs 125 --print_freq 500
+```
+This runs all methods except for Optimized Multileaving since this requires [Gurobi](http://www.gurobi.com/) to be installed. Furthermore it is up to the user to download the datasets and link to them in the [dataset collections](utils/datasetcollections.py) file, averaged results are stored in the given average_folder. Speeding up the simulations can be done by allocating more processes using the n_proc flag.
+
 Citation
 --------
 
