@@ -1,6 +1,6 @@
 import sys, os
 import numpy as np
-sys.path.append(os.path.join(os.path.dirname(__file__), '../..'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from utils.multileavesimulation import MultileaveSimulation
 from utils.argparsers.multileaveargparser import MultileaveArgumentParser
 from multileaving.OptimizedMultileave import OptimizedMultileave

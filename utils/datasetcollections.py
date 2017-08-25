@@ -57,7 +57,11 @@ def get_datasets(sim_args):
 
 
 DATASET_COLLECTION = {}
-DATASET_COLLECTION['NP2003'] = DataSet('2003_np', '/zfs/ilps-plex1/slurm/datastore/hooster2/datasets/2003_np_dataset/Fold*/',
+DATASET_COLLECTION['NP2003'] = DataSet('2003_np', 
+                                       [
+                                        '/zfs/ilps-plex1/slurm/datastore/hooster2/datasets/2003_np_dataset/Fold*/',
+                                        '/Users/hroosterhuis/ILPS/datasets/NP2003/Fold*/',
+                                       ],
                                        'bin', True, 59,
                                        multileave_feat=[
                                                range(11,16), #TF-IDF
