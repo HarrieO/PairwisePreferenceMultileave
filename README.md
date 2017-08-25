@@ -12,7 +12,7 @@ If you use this code to produce results for your scientific publication, please 
   author={Oosterhuis, Harrie and de Rijke, Maarten},
   booktitle={CIKM},
   volume={2017},
-  year={20167,
+  year={2017,
   organization={ACM}
 }
 ```
